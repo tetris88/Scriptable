@@ -19,7 +19,7 @@ const address = 'ETH_ADDRESS'
 
 /// CONFIG
 
-const ethFactor = 100000000000000000;
+const ethFactor = 1000000000000000000;
 
 const reqclean = new Request('https://api.covalenthq.com/v1/1/address/' + address + '/balances_v2/?quote-currency=USD&format=JSON&nft=false&no-nft-fetch=false&key=ckey_docs')
 const resclean = await reqclean.loadJSON()
